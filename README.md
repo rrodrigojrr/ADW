@@ -1,12 +1,15 @@
 # A toolbox for spatial interpolation by irregular meteorogical data observations
 By: Rodrigo Lins Rocha Jr., Fabrício Daniel Santos Silva at Federal University of Alagoas 
+*rodrigo.junior@icat.ufal.br*,*fabricio.santos@icat.ufal.br*
 
 
-Apply two interpolation methods on the irregular points of meteorological observations for get a regular grid in Netcdf, raster or data.frame.
+Apply three interpolation methods on the irregular points of meteorological observations for get a regular grid in Netcdf, raster or data.frame.
 
 **Inverse distance weighting (IDW)** is a type of deterministic method for multivariate interpolation with a known scattered set of points. The assigned values to unknown points are calculated with a weighted that variate in function of distance. The method did propose by Sherpard's (1968).
 
-**The Angular Distance Weighting (ADW)** is a modifield version of Sherpard's algorithm (Hofstra & New, 2009). The weights are estimed in function of the distance and angle between the sample stations. 
+**Radial Distance Weighting (RDW)** is the first modifield version of Sherpard's algorithm where the estimative of weights consider the radius between the interpolation location x and the sample points xi.  
+
+**Angular Distance Weighting (ADW)** is the second modifield version of Sherpard's algorithm (Hofstra & New, 2009). The weights are estimed in function of the distance and angle between the sample stations. 
 
 
 ### References:
