@@ -1,4 +1,4 @@
-# A toolbox for spatial interpolation by irregular meteorogical data samples
+# A toolbox for spatial interpolation by irregular meteorogical data observations
 By: Rodrigo Lins R Jr, Fabrício D S Silva at Federal University of Alagoas 
 
 
