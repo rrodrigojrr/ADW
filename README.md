@@ -1,5 +1,5 @@
 # A toolbox for spatial interpolation by irregular meteorogical data observations
-By: Rodrigo Lins R Jr, Fabrício D S Silva at Federal University of Alagoas 
+By: Rodrigo Lins Rocha Jr., Fabrício Daniel Santos Silva at Federal University of Alagoas 
 
 
 Apply two interpolation methods on the irregular points of meteorological observations for get a regular grid in Netcdf, raster or data.frame.
