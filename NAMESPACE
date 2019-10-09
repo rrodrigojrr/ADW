@@ -2,3 +2,6 @@
 
 export(ADW)
 export(IDW)
+export(NetC)
+export(RDW)
+importFrom(ncdf4,nc_create)

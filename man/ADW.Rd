@@ -25,12 +25,25 @@ ADW(xy, z, xrange, yrange, res = 0.5, n.station = 8, m = 4,
 \item{CDD}{Correlation distance decay param (Km).The default is 100 km.}
 }
 \value{
-Interpoled regular grid in Netcdf, data.frame or raster by ADW method.
+A data.frame with longitude, latitude and interpoled points
 }
 \description{
 Apply the Angular Distance Weighting interpolation
 method on the irregular points of meteorological observations to a regular grid.
 }
+\examples{
+data(TempBrazil) # Temperature for some poins of Brazil
+
+
+LonLat=TempBrazil[,1:2] #Data.frame with Longtude and Latitude
+Temp=TempBrazil[,3] # Vector with observations in points
+
+LonInterval=c(-78,-34.10)  # Coordinates of extremes poins of longitude to grid
+LatInterval=c(-36,5)  # Coordinates of extremes poins of latitude to grid
+
+Interpoled=ADW(xy=LonLat,z=Temp,xrange = LonInterval,yrange = LatInterval)
+
+}
 \author{
-Rodrigo Lins R Júnior
+Rodrigo Lins Rocha Junior
 }

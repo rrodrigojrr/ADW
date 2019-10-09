@@ -14,11 +14,21 @@
 #' @param CDD Correlation distance decay param (Km).The default is 100 km.
 #'
 #'
-#' @return Interpoled regular grid in Netcdf, data.frame or raster by ADW method.
+#' @return A data.frame with longitude, latitude and interpoled points
 #'
-#' @author Rodrigo Lins R Júnior
+#' @author Rodrigo Lins Rocha Junior
 #'
-#' 
+#' @examples 
+#' data(TempBrazil) # Temperature for some poins of Brazil
+#'
+#'
+#' LonLat=TempBrazil[,1:2] #Data.frame with Longtude and Latitude
+#' Temp=TempBrazil[,3] # Vector with observations in points
+#'
+#' LonInterval=c(-78,-34.10)  # Coordinates of extremes poins of longitude to grid
+#' LatInterval=c(-36,5)  # Coordinates of extremes poins of latitude to grid
+#'
+#' Interpoled=ADW(xy=LonLat,z=Temp,xrange = LonInterval,yrange = LatInterval)
 #'
 #' @export
 ADW = function(xy,z,xrange,yrange,res=0.5,n.station=8,m=4,CDD=50){
@@ -128,7 +138,7 @@ ADW = function(xy,z,xrange,yrange,res=0.5,n.station=8,m=4,CDD=50){
   }
   
   
-  colnames(INTERPOLED)=c("long","lat","var")
+  colnames(INTERPOLED)=c("Longitude","Latitude","Variable")
   
   
   return(INTERPOLED)

@@ -1,6 +1,6 @@
 Package: ADW
 Title: A toolbox for spatial interpolation of meteorogical data
-Version: 0.0.0.9000
+Version: 0.4.000
 Authors@R: 
     person(given = "Rodrigo",
            family = "Lins Júnior",
@@ -9,5 +9,6 @@ Authors@R:
 Description: Angular Distance Weighting and Inverse Distance Weighting methods for interpolation of irregular network of meteorological observations to a regular grid.
 License: GPL-3
 Encoding: UTF-8
-LazyData: false
+LazyData: true
 RoxygenNote: 6.1.1
+Imports: raster, maptools, ncdf4

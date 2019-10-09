@@ -1,7 +1,7 @@
-#' @title Inverse Distance Weighting interpolation
-#' @name IDW
+#' @title Radial Distance Weighting interpolation
+#' @name RDW
 #'
-#' @description Apply the Inverse Distance Weighting interpolation
+#' @description Apply the Radial Distance Weighting interpolation
 #' method on the irregular points of meteorological observations to a regular grid.
 #'
 #' @param xy A matrix (N,2) with longitude and latitude of points of data observed 
@@ -11,15 +11,15 @@
 #' @param res The resolution of grid in degree
 #' @param n.station Number of stations used per point for interpolation. The default is 8.
 #' @param p Power parameter. The default is 1.
+#' @param r radius (in degree) for interpolation. The default ins 10
 #'
 #'
 #' @return A data.frame with longitude, latitude and interpoled points
 #'
-#' @author Rodrigo Lins R Junior
-#'
+#' @author Rodrigo Lins da Rocha Junior
+#' 
 #' @examples 
 #' data(TempBrazil) # Temperature for some poins of Brazil
-#'
 #'
 #' LonLat=TempBrazil[,1:2] #Data.frame with Longtude and Latitude
 #' Temp=TempBrazil[,3] # Vector with observations in points
@@ -27,10 +27,10 @@
 #' LonInterval=c(-78,-34.10)  # Coordinates of extremes poins of longitude to grid
 #' LatInterval=c(-36,5)  # Coordinates of extremes poins of latitude to grid
 #'
-#' Interpoled=IDW(xy=LonLat,z=Temp,xrange = LonInterval,yrange = LatInterval)
-#' 
+#' Interpoled=RDW(xy=LonLat,z=Temp,xrange = LonInterval,yrange = LatInterval)
+#'
 #' @export
-IDW = function(xy,z,xrange,yrange,res=0.5,n.station=5,p=1){
+RDW = function(xy,z,xrange,yrange,res=0.5,n.station=5,p=1,r=10){
   
   
   #########################################################################################
@@ -82,7 +82,7 @@ IDW = function(xy,z,xrange,yrange,res=0.5,n.station=5,p=1){
       cron=cron[1:n.station,]
       
       
-      W=(1/(cron$Di**p))
+      W=((r-cron$Di)/r*cron$Di)**p
       
       W[is.na(W)]=0
       
