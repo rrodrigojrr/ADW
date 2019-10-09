@@ -1,4 +1,4 @@
-# A toolbox for spatial interpolation by irregular meteorogical data observations
+# A toolbox for spatial interpolation by irregular meteorogical data observations (under development)
 By: Rodrigo Lins Rocha Jr., Fabrício Daniel Santos Silva at Federal University of Alagoas 
 *rodrigo.junior@icat.ufal.br*,*fabricio.santos@icat.ufal.br*
 ## Introduction
@@ -12,6 +12,8 @@ This package has a set of tools for spatial interpolation by Sherpard methods (c
 **Angular Distance Weighting (ADW)** is the second modifield version of Sherpard's algorithm (Hofstra & New, 2009). The weights are estimed in function of the distance and angle between the sample stations. 
 
 ### Export a netcdf output (With or without spatial mask)
+
+### Skill measure of interpoled method
 
 #### References:
 
