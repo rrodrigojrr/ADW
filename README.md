@@ -2,7 +2,7 @@
 By: Rodrigo Lins Rocha Jr., Fabrício Daniel Santos Silva at Federal University of Alagoas 
 *rodrigo.junior@icat.ufal.br*,*fabricio.santos@icat.ufal.br*
 ## Introduction
-This package has a set of tools for spatial interpolation by Sherpard methods (classical and variations) and functions for validation of interpolation and make netcdf output with spatial mask using shapefiles.
+This package has a set of tools for spatial interpolation by Sherpard methods (classical and variations) and functions for validation of interpolation and export interpoled grid in netcdf output with or without spatial mask using shapefiles.
 
 ### Interpolation functions
 **Inverse distance weighting (IDW)** is a type of deterministic method for multivariate interpolation with a known scattered set of points. The assigned values to unknown points are calculated with a weighted that variate in function of distance. The method did propose by Sherpard's (1968).
