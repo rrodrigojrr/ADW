@@ -11,7 +11,7 @@ This package has a set of tools for spatial interpolation by Sherpard methods (c
 
 **Angular Distance Weighting (ADW)** is the second modifield version of Sherpard's algorithm (Hofstra & New, 2009). The weights are estimed in function of the distance and angle between the sample stations. 
 
-### Get a netcdf output (without or with spatial mask)
+### Export a netcdf output (With or without spatial mask)
 
 #### References:
 
