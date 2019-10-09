@@ -1,4 +1,4 @@
-# A toolbox for spatial interpolation by irregular meteorogical data observations (under development)
+# A toolbox for spatial interpolation by irregular meteorogical data observations (under development and review)
 By: Rodrigo Lins Rocha Jr., Fabrício Daniel Santos Silva at Federal University of Alagoas 
 *rodrigo.junior@icat.ufal.br*,*fabricio.santos@icat.ufal.br*
 ## Introduction
