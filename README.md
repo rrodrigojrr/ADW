@@ -18,6 +18,7 @@ This package has a set of tools for spatial interpolation by Sherpard methods (c
 ### Export a netcdf output (With or without spatial mask)
 
 ### Skill measure of interpoled method
+A good interpolation depends of the best choose of parameters like power (p), radius (r) and Correlation Distance Decay (CDD). So, for test and choose the best method and parameters this package has the function **skill** that make a cross-validation in a data set. The function calcule the correlation, vies and compound relative error (CRE).  
 
 #### References:
 
