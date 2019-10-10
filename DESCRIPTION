@@ -1,6 +1,6 @@
 Package: ADW
 Title: A toolbox for spatial interpolation of meteorogical data
-Version: 0.4.000
+Version: 0.6.000
 Authors@R: 
     person(given = "Rodrigo",
            family = "Lins Júnior",
