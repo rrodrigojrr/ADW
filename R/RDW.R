@@ -11,12 +11,12 @@
 #' @param res The resolution of grid in degree
 #' @param n.station Number of stations used per point for interpolation. The default is 8.
 #' @param p Power parameter. The default is 1.
-#' @param r radius (in degree) for interpolation. The default ins 10
+#' @param r radius (in degree) for interpolation. The default ins 100
 #'
 #'
 #' @return A data.frame with longitude, latitude and interpoled points
 #'
-#' @author Rodrigo Lins da Rocha Junior
+#' @author Rodrigo Lins R. Jr., Fabricio  Daniel S. S. 
 #' 
 #' @examples 
 #' data(TempBrazil) # Temperature for some poins of Brazil
@@ -30,7 +30,7 @@
 #' Interpoled=RDW(xy=LonLat,z=Temp,xrange = LonInterval,yrange = LatInterval)
 #'
 #' @export
-RDW = function(xy,z,xrange,yrange,res=0.5,n.station=5,p=1,r=10){
+RDW = function(xy,z,xrange,yrange,res=0.5,n.station=5,p=1,r=100){
   
   
   #########################################################################################

@@ -15,7 +15,7 @@
 #'
 #' @return A data.frame with longitude, latitude and interpoled points
 #'
-#' @author Rodrigo Lins R Junior
+#' @author Rodrigo Lins R. Jr., Fabricio  Daniel S. S. 
 #'
 #' @examples 
 #' data(TempBrazil) # Temperature for some poins of Brazil

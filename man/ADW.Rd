@@ -45,5 +45,5 @@ Interpoled=ADW(xy=LonLat,z=Temp,xrange = LonInterval,yrange = LatInterval)
 
 }
 \author{
-Rodrigo Lins Rocha Junior
+Rodrigo Lins R. Jr., Fabricio  Daniel S. S.
 }

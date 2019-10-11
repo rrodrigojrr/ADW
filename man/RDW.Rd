@@ -4,7 +4,8 @@
 \alias{RDW}
 \title{Radial Distance Weighting interpolation}
 \usage{
-RDW(xy, z, xrange, yrange, res = 0.5, n.station = 5, p = 1, r = 10)
+RDW(xy, z, xrange, yrange, res = 0.5, n.station = 5, p = 1,
+  r = 100)
 }
 \arguments{
 \item{xy}{A matrix (N,2) with longitude and latitude of points of data observed}
@@ -21,7 +22,7 @@ RDW(xy, z, xrange, yrange, res = 0.5, n.station = 5, p = 1, r = 10)
 
 \item{p}{Power parameter. The default is 1.}
 
-\item{r}{radius (in degree) for interpolation. The default ins 10}
+\item{r}{radius (in degree) for interpolation. The default ins 100}
 }
 \value{
 A data.frame with longitude, latitude and interpoled points
@@ -43,5 +44,5 @@ Interpoled=RDW(xy=LonLat,z=Temp,xrange = LonInterval,yrange = LatInterval)
 
 }
 \author{
-Rodrigo Lins da Rocha Junior
+Rodrigo Lins R. Jr., Fabricio  Daniel S. S.
 }
