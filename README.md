@@ -9,6 +9,18 @@ The IDW classical and variations are more indicated for meteorogical variables e
 
 This package has a set of tools for spatial interpolation by Sherpard methods (classical and variations) with functions that auxiliate the fast generation interpoled maps by witghts a priori estimed and saved. In this package there a function that apply a methodology for make a fast interpolation with weight apriori saved even if missing some observation, excluding tha necessity of new fiting. There also functions for validation of interpolation and export interpoled grid in netcdf output with or without spatial mask using shapefiles.
 
+### Instalation
+
+Using the devtools package:
+```
+devtools::install_github("rrodrigojrr/ADW")
+```
+
+Using the remotes package:
+```
+remotes::install_github("rrodrigojrr/ADW")
+``` 
+
 ### Interpolation functions
 **Inverse distance weighting (IDW)** is a type of deterministic method for multivariate interpolation with a known scattered set of points. The assigned values to unknown points are calculated with a weighted that variate in function of distance. The method did propose by Sherpard's (1968).
 
