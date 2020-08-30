@@ -13,7 +13,7 @@ This package has a set of tools for spatial interpolation by Sherpard methods (c
 
 **Radial Distance Weighting (RDW)** is the first modifield version of Sherpard's algorithm where the estimative of weights consider the radius between the interpolation location x and the sample points xi.  
 
-**Angular Distance Weighting (ADW)** is the second modifield version of Sherpard's algorithm (Hofstra & New, 2009). The weights are estimed in function of the distance and angle between the sample stations. 
+**Angular Distance Weighting (ADW)** is the second modifield version of Sherpard's algorithm (Hofstra & New, 2009). The weights are estimed in function of the distance and angle between the sample stations. A parameter of this method is Correlation Distance Decay (CDD) that can change for each grid point. **P.S: Actualy this method is constant forr all points in package ADW. This generate results very similiar to IDW classical. But is in development the automatition of calculation the CDD point by point. Using correlation of neighborhood stations this method produce fields more coherents with reality.** 
 
 ### Export a netcdf output (With or without spatial mask)
 
