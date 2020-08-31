@@ -2,7 +2,7 @@
 By: Rodrigo Lins Rocha Jr., Fabrício Daniel Santos Silva at Federal University of Alagoas 
 *rodrigo.junior@icat.ufal.br*,*fabricio.santos@icat.ufal.br*
 
-![teste](ADW.png)
+![ADW](https://user-images.githubusercontent.com/56301724/91677836-566ecb00-eb1a-11ea-916e-004cb684ee58.jpg)
 
 ## Introduction
 
