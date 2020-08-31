@@ -1,6 +1,9 @@
 # A toolbox for spatial interpolation by irregular meteorogical data observations (under development and review)
 By: Rodrigo Lins Rocha Jr., Fabrício Daniel Santos Silva at Federal University of Alagoas 
 *rodrigo.junior@icat.ufal.br*,*fabricio.santos@icat.ufal.br*
+
+![teste](ADW.png)
+
 ## Introduction
 
 Meteorologists several work with telemetric data by meteorological stations that measure fundamental variables. They usualy need some fields of this variables for make best analysis and forecast the atmosphere. This fields are obtained by spatial interpolation methods (SMP). Some methods used in most commun meteorogical softwares (GrADS and NCL) are actually smoth regular grid method, not being indicated for SPM. The concept of SPM is estimate a point with unknown observation using known observations in neighborhood meteorogical stations. The most efficient methods are based in Kringing or Inverse Distance Weighting (IDW). In operational aplicattions, Kringing is not indicated for hard automation fit a good variogram.
